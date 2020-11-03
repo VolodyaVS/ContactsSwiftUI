@@ -11,6 +11,12 @@
 		FF1137E2254FD0E30011E074 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1137E1254FD0E30011E074 /* ContentView.swift */; };
 		FF1137E4254FD0E50011E074 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF1137E3254FD0E50011E074 /* Assets.xcassets */; };
 		FF1137E7254FD0E50011E074 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF1137E6254FD0E50011E074 /* Preview Assets.xcassets */; };
+		FF1137F5254FD1AA0011E074 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1137F4254FD1AA0011E074 /* DataManager.swift */; };
+		FF6C26662551DC09001BC15E /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6C26652551DC09001BC15E /* Person.swift */; };
+		FF6C266A2551DF60001BC15E /* RowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6C26692551DF60001BC15E /* RowView.swift */; };
+		FF6C266E2551E0DD001BC15E /* SectionsContacts.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6C266D2551E0DD001BC15E /* SectionsContacts.swift */; };
+		FF6C26722551E3BE001BC15E /* ContactDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6C26712551E3BE001BC15E /* ContactDetails.swift */; };
+		FF6C26762551E598001BC15E /* ContactList.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6C26752551E598001BC15E /* ContactList.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +26,12 @@
 		FF1137E3254FD0E50011E074 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FF1137E6254FD0E50011E074 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		FF1137E8254FD0E50011E074 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FF1137F4254FD1AA0011E074 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		FF6C26652551DC09001BC15E /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		FF6C26692551DF60001BC15E /* RowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RowView.swift; sourceTree = "<group>"; };
+		FF6C266D2551E0DD001BC15E /* SectionsContacts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionsContacts.swift; sourceTree = "<group>"; };
+		FF6C26712551E3BE001BC15E /* ContactDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactDetails.swift; sourceTree = "<group>"; };
+		FF6C26752551E598001BC15E /* ContactList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,10 +64,11 @@
 		FF1137DE254FD0E30011E074 /* Contacts */ = {
 			isa = PBXGroup;
 			children = (
-				FF1137DF254FD0E30011E074 /* ContactsApp.swift */,
-				FF1137E1254FD0E30011E074 /* ContentView.swift */,
-				FF1137E3254FD0E50011E074 /* Assets.xcassets */,
-				FF1137E8254FD0E50011E074 /* Info.plist */,
+				FF6C26642551DBA6001BC15E /* Models */,
+				FF1137EF254FD0EF0011E074 /* Views */,
+				FF1137F7254FD1B00011E074 /* Managers */,
+				FF1137F1254FD0F90011E074 /* Sources */,
+				FF1137F2254FD1060011E074 /* Supporting */,
 				FF1137E5254FD0E50011E074 /* Preview Content */,
 			);
 			path = Contacts;
@@ -67,6 +80,51 @@
 				FF1137E6254FD0E50011E074 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		FF1137EF254FD0EF0011E074 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FF1137DF254FD0E30011E074 /* ContactsApp.swift */,
+				FF1137E1254FD0E30011E074 /* ContentView.swift */,
+				FF6C26752551E598001BC15E /* ContactList.swift */,
+				FF6C26712551E3BE001BC15E /* ContactDetails.swift */,
+				FF6C266D2551E0DD001BC15E /* SectionsContacts.swift */,
+				FF6C26692551DF60001BC15E /* RowView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		FF1137F1254FD0F90011E074 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				FF1137E3254FD0E50011E074 /* Assets.xcassets */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		FF1137F2254FD1060011E074 /* Supporting */ = {
+			isa = PBXGroup;
+			children = (
+				FF1137E8254FD0E50011E074 /* Info.plist */,
+			);
+			path = Supporting;
+			sourceTree = "<group>";
+		};
+		FF1137F7254FD1B00011E074 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				FF1137F4254FD1AA0011E074 /* DataManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		FF6C26642551DBA6001BC15E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FF6C26652551DC09001BC15E /* Person.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +196,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF6C266E2551E0DD001BC15E /* SectionsContacts.swift in Sources */,
 				FF1137E2254FD0E30011E074 /* ContentView.swift in Sources */,
+				FF6C266A2551DF60001BC15E /* RowView.swift in Sources */,
+				FF1137F5254FD1AA0011E074 /* DataManager.swift in Sources */,
+				FF6C26762551E598001BC15E /* ContactList.swift in Sources */,
+				FF6C26722551E3BE001BC15E /* ContactDetails.swift in Sources */,
+				FF6C26662551DC09001BC15E /* Person.swift in Sources */,
 				FF1137E0254FD0E30011E074 /* ContactsApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -271,7 +335,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Contacts/Preview Content\"";
 				DEVELOPMENT_TEAM = JBMRXJPY8V;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = Contacts/Info.plist;
+				INFOPLIST_FILE = Contacts/Supporting/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -293,7 +357,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Contacts/Preview Content\"";
 				DEVELOPMENT_TEAM = JBMRXJPY8V;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = Contacts/Info.plist;
+				INFOPLIST_FILE = Contacts/Supporting/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
